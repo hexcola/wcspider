@@ -1,6 +1,12 @@
 ## 项目
 使用爬虫搜索所有微信公众号资料及其文章
 
+## 将特定公众号历史消息转换成RSS
+1. 通过搜狗搜索获取公众号的openid
+2. 创建公众号历史消息请求URL（http://weixin.sogou.com/gzhjs?cb=sogou.weixin.gzhcb&openid={0}&page={1}&t={2}）
+3. 解析出历史消息总量、历史消息总页数、单个历史消息的XML
+4. 根据读取到的所有的历史消息XML内容，创建RSS文件
+
 ## 参考
 * http://www.pythonclub.org/python-network-application/observer-spider
 * http://docs.seleniumhq.org/
